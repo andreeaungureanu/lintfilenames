@@ -114,6 +114,7 @@ function validateFilenames(path, pattern) {
             for (var dir_1 = __asyncValues(dir), dir_1_1; dir_1_1 = yield dir_1.next(), !dir_1_1.done;) {
                 const dirent = dir_1_1.value;
                 if (dirent.isDirectory()) {
+                    console.log(`  ✔️  ${dirent.name}`);
                     continue;
                 }
                 totalFilesAnalyzed++;

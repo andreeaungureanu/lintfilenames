@@ -17,7 +17,8 @@ export async function validateFilenames(
 
     console.log('Verification starting...');
     for await (const dirent of dir) {
-      if (dirent.isDirectory()) {
+        if (dirent.isDirectory()) {
+            console.log(`  ✔️  ${dirent.name}`);
         continue;
       }
       totalFilesAnalyzed++;
